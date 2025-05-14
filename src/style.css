@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'cairo', sans-serif;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sign {
+    height: 90vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.sign form {
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    padding: 50px 60px;
+    box-shadow: 2px 2px 10px 0px #777;
+    border-radius: 12px;
+}
+form label {
+    margin-bottom: 4px;
+}
+
+.sign input {
+    padding: 10px 20px;
+    outline: none;
+    width: 100%;
+    border: 2px solid  white;
+    border-radius: 6px;
+    box-shadow: 2px 2px 4px 0px #777;
+    transition: 0.3s;
+    margin-bottom: 18px;
+    
+}
+
+input:focus {
+    box-shadow: 2px 2px 4px 0px #2196f3;
+}
+
+
+
+input::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.register {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.register button,
+.register-nav {
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+    background-color: white;
+    border: 2px solid #2196f3;
+    color: #2196f3;
+    text-decoration: none;
+}
+
+.register button:hover, 
+.register-nav:hover {
+    background-color: #2196f3;
+    border: 2px solid white;
+    color: white;
+}
+
+form p {
+    font-size: 10px;
+    color: #cd4444;
+    position: relative;
+    top: -10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+
+.log {
+    color: #777;
+    transition: 0.3s;
+    position: relative;
+}
+
+.log::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #2196f3;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.log:hover {
+    color: #2196f3;
+}
+
+.log:hover::before {
+    width: 100%;
+    transition: 0.5s ease 0.2s;
+    
+}
+
+
